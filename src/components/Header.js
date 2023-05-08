@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
@@ -9,11 +10,8 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 relative">
       <div className="">Logo goes here</div>
-      <span
-        onClick={() => setShowNav((prev) => !prev)}
-        className="border md:hidden"
-      >
-        <GiHamburgerMenu />
+      <span onClick={() => setShowNav((prev) => !prev)} className=" md:hidden">
+        {showNav ? <GiHamburgerMenu /> : <ImCross />}
       </span>
       <nav
         className={`flex flex-col fixed left-0  items-center  ${

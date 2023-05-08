@@ -8,13 +8,13 @@ const Header = () => {
   const [showNav, setShowNav] = useState(true);
   console.log(showNav);
   return (
-    <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 relative">
+    <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 fixed top-0 w-screen">
       <div className="">Logo goes here</div>
       <span onClick={() => setShowNav((prev) => !prev)} className=" md:hidden">
         {showNav ? <GiHamburgerMenu /> : <ImCross />}
       </span>
       <nav
-        className={`flex flex-col fixed left-0  items-center  ${
+        className={`flex flex-col fixed left-0  items-center   ${
           showNav ? "p-0 h-0 overflow-hidden" : "p-5"
         } top-12 bg-primary w-screen   gap-5 z-10 md:static md:flex-row md:w-auto md:overflow-auto md:h-auto `}
       >

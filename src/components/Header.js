@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
 const Header = () => {
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(true);
   console.log(showNav);
   return (
     <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 relative">
@@ -15,15 +15,45 @@ const Header = () => {
       </span>
       <nav
         className={`flex flex-col fixed left-0  items-center  ${
-          showNav ? "p-0 h-0" : "p-5"
-        } top-12 bg-primary w-screen   gap-5 z-10 md:static md:flex-row md:w-auto `}
+          showNav ? "p-0 h-0 overflow-hidden" : "p-5"
+        } top-12 bg-primary w-screen   gap-5 z-10 md:static md:flex-row md:w-auto md:overflow-auto md:h-auto `}
       >
-        <NavLink>Home</NavLink>
-        <NavLink>About</NavLink>
-        <NavLink>BootCamp Journey</NavLink>
-        <NavLink>Education</NavLink>
-        <NavLink>Skills</NavLink>
-        <NavLink>Portfolio</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "text-secondary" : null)}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="about-me"
+          className={({ isActive }) => (isActive ? "text-secondary" : null)}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="my-bootcamp-journey"
+          className={({ isActive }) => (isActive ? "text-secondary" : null)}
+        >
+          BootCamp Journey
+        </NavLink>
+        <NavLink
+          to="education"
+          className={({ isActive }) => (isActive ? "text-secondary" : null)}
+        >
+          Education
+        </NavLink>
+        <NavLink
+          to="skills"
+          className={({ isActive }) => (isActive ? "text-secondary" : null)}
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          to="portfolio"
+          className={({ isActive }) => (isActive ? "text-secondary" : null)}
+        >
+          Portfolio
+        </NavLink>
       </nav>
       <div className="gap-4 font-normal hidden lg:flex">
         <a

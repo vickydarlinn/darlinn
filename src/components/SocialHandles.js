@@ -7,7 +7,7 @@ import {
 
 const SocialHandles = () => {
   return (
-    <div className="absolute left-3 top-1/4 sm:top-2/4 text-4xl translate-y-[-50%] flex flex-col gap-5 text-secondary">
+    <div className="fixed left-3 top-1/4 sm:top-2/4 text-4xl translate-y-[-50%] flex flex-col gap-5 text-secondary">
       <a href="vicky.com">
         <AiOutlineGithub />
       </a>

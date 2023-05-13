@@ -101,7 +101,7 @@ const BootcampJourneyPage = () => {
         </div>
       </div>
 
-      <PaginationArrows prev="/about-me" next="/education" />
+      <PaginationArrows prev="/" next="/education" />
     </section>
   );
 };

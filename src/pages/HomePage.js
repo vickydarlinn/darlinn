@@ -19,7 +19,7 @@ const HomePage = () => {
             technology, which is reflected in my design approach and vision.
           </p>
           <Link
-            to="/about-me"
+            to="/my-bootcamp-journey"
             className="underline text-secondary inline-block"
           >
             Learn more
@@ -29,7 +29,7 @@ const HomePage = () => {
           <img src={profileImg} alt="" className="w-full" />
         </div>
       </div>
-      <PaginationArrows prev="" next="/about-me" />
+      <PaginationArrows prev="" next="/my-bootcamp-journey" />
     </section>
   );
 };

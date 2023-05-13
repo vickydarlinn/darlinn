@@ -24,12 +24,7 @@ const Header = () => {
         >
           Home
         </NavLink>
-        <NavLink
-          to="about-me"
-          className={({ isActive }) => (isActive ? "text-secondary" : null)}
-        >
-          About
-        </NavLink>
+
         <NavLink
           to="my-bootcamp-journey"
           className={({ isActive }) => (isActive ? "text-secondary" : null)}

@@ -3,13 +3,16 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(true);
   console.log(showNav);
   return (
-    <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 fixed top-0 w-screen">
-      <div className="">Logo goes here</div>
+    <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 fixed top-0 w-screen z-10">
+      <Link to="/" className="font-bold">
+        vickyDarlinn
+      </Link>
       <span onClick={() => setShowNav((prev) => !prev)} className=" md:hidden">
         {showNav ? <GiHamburgerMenu /> : <ImCross />}
       </span>

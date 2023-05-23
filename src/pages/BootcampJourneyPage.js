@@ -11,30 +11,21 @@ const BootcampJourneyPage = () => {
           <h2 className="text-4xl  italic font-light my-3">
             My Bootcamp Journey
           </h2>
-          <p className="font-thin">
-            In late 2021, I embarked on an exciting web development journey
-            fueled by my passion for creating engaging user experiences. I
-            enrolled in the Scrimba Frontend Bootcamp, a comprehensive program
-            that laid a strong foundation in modern web development practices.
-            <br />
-            During the bootcamp, I delved into technologies like HTML, CSS, and
-            JavaScript, honing my skills in crafting responsive layouts and
-            implementing interactive features. To further expand my expertise, I
-            also took an advanced frontend course on Udemy, exploring additional
-            frameworks and libraries. <br />
-            Seeking specialization in React.js, I joined Akshay Saini's Namaste
-            React Live Bootcamp—an intensive program immersing me in the
-            intricacies of React.js and its ecosystem. Through practical
-            assignments, I gained an in-depth understanding of component-based
-            architecture, state management, and advanced React.js concepts.
-            <br />
-            Throughout these bootcamps, I created remarkable projects showcasing
-            my ability to design visually appealing and user-friendly web
-            applications. My portfolio reflects diverse skills, from crafting
-            clean code to effective problem-solving. <br />
-            With a strong foundation in frontend development and a passion for
-            continuous learning, I am ready to bring my creative ideas to life
-            and contribute to exciting projects in the industry.
+          <p className="font-thin leading-loose">
+            In late 2021, I embarked on a web development journey driven by my
+            passion for creating engaging user experiences. I completed the
+            <strong> Scrimba Frontend Bootcamp</strong> , mastering HTML, CSS,
+            and JavaScript, and expanded my knowledge with an advanced frontend
+            course on Udemy. Seeking specialization in React.js, I joined the
+            intensive Namaste
+            <strong> React Live Bootcamp by Akshay Saini</strong> . Through
+            practical assignments, I gained expertise in component-based
+            architecture, state management, and advanced React.js concepts. I
+            showcased my skills by creating visually appealing and user-friendly
+            web applications, reflecting my ability to craft clean code and
+            solve problems effectively. With a solid foundation and a thirst for
+            continuous learning, I'm ready to contribute to exciting industry
+            projects.
           </p>
         </div>
         <div className="w-auto lg:w-1/2 mt-20 space-y-10 ">

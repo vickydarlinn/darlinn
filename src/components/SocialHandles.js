@@ -8,13 +8,25 @@ import {
 const SocialHandles = () => {
   return (
     <div className="fixed left-3 top-1/4 sm:top-2/4 text-4xl translate-y-[-50%] flex flex-col gap-5 text-secondary">
-      <a href="vicky.com">
+      <a
+        target="_blank"
+        href="https://github.com/vickydarlinn/"
+        className="hover:text-white"
+      >
         <AiOutlineGithub />
       </a>
-      <a href="vicky.com">
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/utpalsangwan/"
+        className="hover:text-white"
+      >
         <AiFillLinkedin />
       </a>
-      <a href="vicky.com">
+      <a
+        target="_blank"
+        href="https://twitter.com/utpalsangwan"
+        className="hover:text-white"
+      >
         <AiOutlineTwitter />
       </a>
     </div>

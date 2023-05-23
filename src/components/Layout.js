@@ -9,7 +9,7 @@ const Layout = () => {
     <>
       <Header />
       <SocialHandles />
-      <div className="mt-10 md:mt-20 ml-16 md:ml-40 ">
+      <div className="mt-12 md:mt-20 ml-16 md:ml-40 ">
         <Outlet />
       </div>
     </>

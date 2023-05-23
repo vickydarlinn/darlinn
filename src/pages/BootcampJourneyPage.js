@@ -7,7 +7,7 @@ const BootcampJourneyPage = () => {
     <section className="flex justify-between flex-col items-center md:flex-row  ">
       <div className="max-w-[80%] flex flex-col lg:flex-row-reverse  gap-10">
         <div className="w-auto lg:w-[35%] static lg:fixed lg:left-20">
-          <span className="font-thin text-2xl md:text-4xl">{"<3/>"}</span>
+          <span className="font-thin text-2xl md:text-4xl">{"<2/>"}</span>
           <h2 className="text-4xl  italic font-light my-3">
             My Bootcamp Journey
           </h2>

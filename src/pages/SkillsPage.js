@@ -6,7 +6,7 @@ const SkillsPage = () => {
     <section className="flex justify-between flex-col items-center md:flex-row">
       <div className="max-w-[80%] flex flex-col lg:flex-row gap-5">
         <div className="w-auto lg:w-1/2">
-          <span className="font-thin text-2xl md:text-4xl">{"<5/>"}</span>
+          <span className="font-thin text-2xl md:text-4xl">{"<4/>"}</span>
           <h2 className="text-4xl md:text-7xl italic font-light my-10">
             Skills
           </h2>

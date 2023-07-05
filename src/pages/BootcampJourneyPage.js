@@ -1,6 +1,7 @@
 import React from "react";
 import PaginationArrows from "../components/PaginationArrows";
 import projectImg from "../assets/project.svg";
+import { projects } from "../data";
 
 const BootcampJourneyPage = () => {
   return (
@@ -33,62 +34,28 @@ const BootcampJourneyPage = () => {
             Here are some of the projects I developed during my bootcamp
             journey:
           </p>
-          <div className="border-l-2 border-b-2  border-secondary pl-4 pb-4 ">
-            <h4 className="text-center mb-2">devFinder</h4>{" "}
-            <img className="text-secondary" src={projectImg} alt="" />
-            <p>
-              Description: Here I practiced especially two hooks- useEffect,
-              useContext.
-            </p>
-            <a
-              className="text-secondary underline"
-              href="https://vickydarlinn-frontend-challenges.vercel.app/"
-            >
-              Live Link
-            </a>
-          </div>
-          <div className="border-l-2 border-b-2  border-secondary pl-4 pb-4 ">
-            <h4 className="text-center mb-2">devFinder</h4>{" "}
-            <img className="text-secondary" src={projectImg} alt="" />
-            <p>
-              Description: Here I practiced especially two hooks- useEffect,
-              useContext.
-            </p>
-            <a
-              className="text-secondary underline"
-              href="https://vickydarlinn-frontend-challenges.vercel.app/"
-            >
-              Live Link
-            </a>
-          </div>{" "}
-          <div className="border-l-2 border-b-2  border-secondary pl-4 pb-4 ">
-            <h4 className="text-center mb-2">devFinder</h4>{" "}
-            <img className="text-secondary" src={projectImg} alt="" />
-            <p>
-              Description: Here I practiced especially two hooks- useEffect,
-              useContext.
-            </p>
-            <a
-              className="text-secondary underline"
-              href="https://vickydarlinn-frontend-challenges.vercel.app/"
-            >
-              Live Link
-            </a>
-          </div>{" "}
-          <div className="border-l-2 border-b-2  border-secondary pl-4 pb-4 ">
-            <h4 className="text-center mb-2">devFinder</h4>{" "}
-            <img className="text-secondary" src={projectImg} alt="" />
-            <p>
-              Description: Here I practiced especially two hooks- useEffect,
-              useContext.
-            </p>
-            <a
-              className="text-secondary underline"
-              href="https://vickydarlinn-frontend-challenges.vercel.app/"
-            >
-              Live Link
-            </a>
-          </div>
+          {projects.map((project) => (
+            <div className="border-l-2 border-b-2  border-secondary pl-4 pb-4 ">
+              <h4 className="text-center mb-2">{project.name}</h4>{" "}
+              <img className="text-secondary" src={projectImg} alt="" />
+              <p>
+                Description: Here I practiced especially two hooks- useEffect,
+                useContext.
+              </p>
+              <a
+                className="text-secondary underline mr-4"
+                href={`${project.githubUrl}`}
+              >
+                Github Link
+              </a>
+              <a
+                className="text-secondary underline"
+                href={`${project.liveUrl}`}
+              >
+                Live Link
+              </a>
+            </div>
+          ))}
         </div>
       </div>
 

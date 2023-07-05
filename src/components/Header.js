@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(true);
-  console.log(showNav);
   return (
     <header className="flex justify-between items-center bg-primary text-white font-thin py-3 px-6 fixed top-0 w-screen z-10">
       <Link to="/" className="font-bold">

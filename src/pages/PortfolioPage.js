@@ -1,8 +1,14 @@
 import React from "react";
 import PaginationArrows from "../components/PaginationArrows";
+import ProjectCard from "../components/ProjectCard";
+
+// images
 import anshu_small_shop from "../assets/anshu_small_shop.png";
 import portfolioImage from "../assets/portfolio.png";
-import ProjectCard from "../components/ProjectCard";
+import todo_react from "../assets/todo_react.png";
+import color_generator from "../assets/color_generator.png";
+import movie_watchlist from "../assets/movie_watchlist.png";
+import car_collection from "../assets/car_collection.png";
 
 const PortfolioPage = () => {
   return (
@@ -23,6 +29,26 @@ const PortfolioPage = () => {
           image={portfolioImage}
           liveUrl="https://darlinn.vercel.app/"
           githubUrl="https://github.com/vickydarlinn/darlinn"
+        />
+        <ProjectCard
+          image={todo_react}
+          githubUrl="https://github.com/vickydarlinn/todo-react-app"
+          liveUrl="https://todo-react-app-topaz.vercel.app/"
+        />
+        <ProjectCard
+          image={color_generator}
+          githubUrl="https://github.com/vickydarlinn/color-scheme-generator"
+          liveUrl="https://color-scheme-generator-vickydarlinn.netlify.app/"
+        />
+        <ProjectCard
+          image={movie_watchlist}
+          githubUrl="https://github.com/vickydarlinn/Movie-watchlist"
+          liveUrl="https://movie-watchlist-vickydarlinn.netlify.app/"
+        />
+        <ProjectCard
+          image={car_collection}
+          githubUrl="https://github.com/vickydarlinn/redux_learning"
+          liveUrl="https://redux-learning-one.vercel.app/"
         />
       </div>
 

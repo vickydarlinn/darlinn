@@ -16,9 +16,9 @@ const Header = () => {
         {showNav ? <GiHamburgerMenu /> : <ImCross />}
       </span>
       <nav
-        className={`flex flex-col fixed left-0  items-center   ${
+        className={`flex flex-col  fixed left-0  items-center   ${
           showNav ? "p-0 h-0 overflow-hidden" : "p-5"
-        } top-12 bg-primary w-screen   gap-5 z-10 md:static md:flex-row md:w-auto md:overflow-auto md:h-auto `}
+        } top-12 bg-primary w-screen   gap-8 z-10 md:static md:flex-row md:w-auto md:overflow-auto md:h-auto `}
       >
         <NavLink
           to="/"
@@ -27,12 +27,6 @@ const Header = () => {
           Home
         </NavLink>
 
-        <NavLink
-          to="my-bootcamp-journey"
-          className={({ isActive }) => (isActive ? "text-secondary" : null)}
-        >
-          BootCamp Journey
-        </NavLink>
         <NavLink
           to="education"
           className={({ isActive }) => (isActive ? "text-secondary" : null)}

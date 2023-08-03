@@ -29,7 +29,7 @@ const HomePage = () => {
           <img src={profileImg} alt="" className="w-full" />
         </div>
       </div>
-      <PaginationArrows prev="" next="/my-bootcamp-journey" />
+      <PaginationArrows prev="" next="/education" />
     </section>
   );
 };

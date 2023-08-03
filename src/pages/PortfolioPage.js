@@ -14,7 +14,7 @@ const PortfolioPage = () => {
   return (
     <section className="flex justify-between flex-col">
       <div className="w-auto ">
-        <span className="font-thin text-2xl md:text-4xl">{"<4/>"}</span>
+        <span className="font-thin text-2xl md:text-4xl">{"<04/>"}</span>
         <h2 className="text-4xl md:text-7xl italic font-light my-10">
           Projects
         </h2>

@@ -1,20 +1,21 @@
 import React from "react";
-import PaginationArrows from "../components/PaginationArrows";
 import ProjectCard from "../components/ProjectCard";
-import { projects } from "../data";
+import PaginationArrows from "../components/PaginationArrows";
 
-const PortfolioPage = () => {
+import { small_projects } from "../data";
+
+const MiniProjectsPage = () => {
   return (
     <section className="flex justify-between flex-col">
       <div className="w-auto ">
-        <span className="font-thin text-2xl md:text-4xl">{"<04/>"}</span>
+        <span className="font-thin text-2xl md:text-4xl">{"<05/>"}</span>
         <h2 className="text-4xl md:text-7xl italic font-light my-10">
-          Projects
+          Mini Projects
         </h2>
       </div>
 
-      <div className="flex gap-10 flex-wrap justify-center items-start p-3">
-        {projects.map((project) => (
+      <div className="flex gap-10 flex-wrap justify-center p-3">
+        {small_projects.map((project) => (
           <ProjectCard
             key={project.id}
             image={project.image}
@@ -25,9 +26,9 @@ const PortfolioPage = () => {
         ))}
       </div>
 
-      <PaginationArrows prev="/skills" next="" />
+      <PaginationArrows prev="/portfolio" next="" />
     </section>
   );
 };
 
-export default PortfolioPage;
+export default MiniProjectsPage;

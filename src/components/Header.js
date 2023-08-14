@@ -48,15 +48,18 @@ const Header = () => {
       </nav>
       <div className="gap-4 font-normal hidden lg:flex">
         <a
-          href="https://www.linkedin.com/in/utpalsangwan/"
+          href="https://drive.google.com/file/d/1ZEH_8sBiSHhiMG6sA3VqS91mjT0mxZyh/view?usp=sharing"
           className="flex items-center gap-1  text-secondary  underline "
         >
           <AiOutlineCloudDownload />
-          <span>Download CV</span>
+          <span>Download Resume</span>
         </a>
-        <button className="px-6 py-2 bg-secondary text-primary rounded-2xl ">
+        <a
+          href="mailto:uttapalsangwan@gmail.com"
+          className="px-6 py-2 bg-secondary text-primary rounded-2xl "
+        >
           Contact Me
-        </button>
+        </a>
       </div>
     </header>
   );

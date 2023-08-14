@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectCard = (props) => {
   const [hovered, setHovered] = useState(false);
@@ -12,13 +13,18 @@ const ProjectCard = (props) => {
   };
   return (
     <div
-      className="relative max-w-[500px]"
+      className="relative max-w-[500px] "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={props.image} alt={props.liveUrl} />
+      <LazyLoadImage
+        className="inline-block"
+        src={props.image}
+        alt={props.liveUrl}
+        effect="blur"
+      />
       {hovered && (
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col gap-4 items-center justify-center">
           <div className="text-white text-center">
             <a
               href={props.liveUrl}
@@ -33,6 +39,7 @@ const ProjectCard = (props) => {
               Github Link
             </a>
           </div>
+          <div>{props.name}</div>
         </div>
       )}
     </div>

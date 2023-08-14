@@ -2,6 +2,7 @@ import React from "react";
 import PaginationArrows from "../components/PaginationArrows";
 import profileImg from "../assets/profile_pic.jpeg";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomePage = () => {
   return (
@@ -26,7 +27,12 @@ const HomePage = () => {
           </Link>
         </div>
         <div className="w-full lg:w-1/2">
-          <img src={profileImg} alt="" className="w-full" />
+          <LazyLoadImage
+            effect="blur"
+            src={profileImg}
+            alt=""
+            className="w-full"
+          />
         </div>
       </div>
       <PaginationArrows prev="" next="/education" />
